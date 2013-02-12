@@ -13,7 +13,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.zkoss.zk.au.http.DHtmlUpdateServlet;
 import org.zkoss.zk.ui.http.DHtmlLayoutServlet;
@@ -54,7 +54,7 @@ public class AtmosphereIT {
 
     @Test
     public void testServerPush() throws Exception {
-        WebDriver driver = new FirefoxDriver();
+        WebDriver driver = new ChromeDriver();
         try {
             driver.get("http://127.0.0.1:" + port + "/index.zul");
 
