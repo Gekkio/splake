@@ -56,7 +56,7 @@ public class AtmosphereIT {
     public void testServerPush() throws Exception {
         WebDriver driver = new FirefoxDriver();
         try {
-            driver.get("http://localhost:" + port + "/index.zul");
+            driver.get("http://127.0.0.1:" + port + "/index.zul");
 
             final JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeAsyncScript("zk.afterMount(arguments[0])");
