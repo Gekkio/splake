@@ -39,7 +39,7 @@ public class AtmosphereServerPush implements ServerPush {
     private final int timeout;
 
     public AtmosphereServerPush() {
-        val timeoutString = Library.getProperty("fi.jawsy.jawwa.zk.atmosphere.timeout");
+        val timeoutString = Library.getProperty("fi.gekkio.splake.atmosphere.timeout");
         if (Strings.isNullOrEmpty(timeoutString)) {
             timeout = DEFAULT_TIMEOUT;
         } else {
@@ -93,7 +93,7 @@ public class AtmosphereServerPush implements ServerPush {
 
         log.debug("Starting server push for " + desktop);
         int clientTimeout = timeout + 1000 * 60;
-        Clients.response("jawwa.atmosphere.serverpush", new AuScript(null, "jawwa.atmosphere.startServerPush('" + desktop.getId() + "', " + clientTimeout
+        Clients.response("splake.atmosphere.serverpush", new AuScript(null, "splake.atmosphere.startServerPush('" + desktop.getId() + "', " + clientTimeout
                 + ");"));
     }
 
@@ -106,7 +106,7 @@ public class AtmosphereServerPush implements ServerPush {
         }
 
         log.debug("Stopping server push for " + desktop);
-        Clients.response("jawwa.atmosphere.serverpush", new AuScript(null, "jawwa.atmosphere.stopServerPush('" + desktop.getId() + "');"));
+        Clients.response("splake.atmosphere.serverpush", new AuScript(null, "splake.atmosphere.stopServerPush('" + desktop.getId() + "');"));
         commitResponse();
     }
 

@@ -14,7 +14,7 @@ import com.yammer.metrics.core.MetricsRegistry;
 /**
  * Provides a default implementation of ZK metrics.
  * 
- * Metrics will be exported to JMX with names starting with <strong>fi.jawsy.jawwa.zk.metrics:type=ZkMetrics</strong>.
+ * Metrics will be exported to JMX with names starting with <strong>fi.gekkio.splake.metrics:type=ZkMetrics</strong>.
  * Also manages the lifecycle of the default static {@link MetricsRegistry}, so it is shut down properly with the
  * application.
  */
