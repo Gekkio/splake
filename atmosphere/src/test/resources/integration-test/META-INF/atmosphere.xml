@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atmosphere-handlers>
+	<atmosphere-handler context-root="/zkau/comet" class-name="fi.gekkio.splake.atmosphere.ZkAtmosphereHandler" />
+</atmosphere-handlers>

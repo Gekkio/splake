@@ -24,20 +24,24 @@
 		<drumfish.version>0.1.0</drumfish.version>
 		<guava.version>13.0.1</guava.version>
 		<javax.servlet.version>3.0.1</javax.servlet.version>
+		<jetty.version>8.1.9.v20130131</jetty.version>
 		<jsr305.version>2.0.1</jsr305.version>
 		<junit.version>4.11</junit.version>
+		<logback.version>1.0.9</logback.version>
 		<lombok.version>0.11.6</lombok.version>
 		<metrics.version>2.2.0</metrics.version>
 		<mockito.version>1.9.5</mockito.version>
 		<scala.version>2.10.0</scala.version>
 		<scala.abi.version>2.10</scala.abi.version>
 		<scalacheck.version>1.10.0</scalacheck.version>
+		<selenium.version>2.29.1</selenium.version>
 		<slf4j.version>1.7.2</slf4j.version>
 		<specs2.version>1.13</specs2.version>
 		<zk.version>6.5.1.1</zk.version>
 
 		<maven.clean.version>2.5</maven.clean.version>
 		<maven.compiler.version>3.0</maven.compiler.version>
+		<maven.failsafe.version>2.13</maven.failsafe.version>
 		<maven.findbugs.version>2.5.2</maven.findbugs.version>
 		<maven.install.version>2.4</maven.install.version>
 		<maven.gpg.version>1.4</maven.gpg.version>
@@ -128,6 +132,11 @@
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-failsafe-plugin</artifactId>
+					<version>${maven.failsafe.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-gpg-plugin</artifactId>
 					<version>${maven.gpg.version}</version>
 				</plugin>
@@ -204,6 +213,11 @@
 			</dependency>
 			<!-- *** External dependencies *** -->
 			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
 				<artifactId>jsr305</artifactId>
 				<version>${jsr305.version}</version>
@@ -244,6 +258,21 @@
 				<version>${atmosphere.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-server</artifactId>
+				<version>${jetty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-webapp</artifactId>
+				<version>${jetty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-websocket</artifactId>
+				<version>${jetty.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.mockito</groupId>
 				<artifactId>mockito-core</artifactId>
 				<version>${mockito.version}</version>
@@ -262,6 +291,11 @@
 				<groupId>org.scala-lang</groupId>
 				<artifactId>scala-library</artifactId>
 				<version>${scala.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-java</artifactId>
+				<version>${selenium.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
