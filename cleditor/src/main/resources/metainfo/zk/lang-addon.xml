@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-addon>
+	<addon-name>splake-cleditor</addon-name>
+	<language-name>xul/html</language-name>
+
+	<version>
+		<zk-version>6.5.0</zk-version>
+	</version>
+
+	<stylesheet href="~./splake/ext/cleditor-1.3.0-gekkio/jquery.cleditor.css" type="text/css" />
+
+	<javascript package="splake.cleditor" ondemand="true" />
+
+	<component>
+		<component-name>cleditor</component-name>
+		<component-class>fi.gekkio.splake.cleditor.Cleditor</component-class>
+		<widget-class>splake.cleditor.Cleditor</widget-class>
+	</component>
+</language-addon>

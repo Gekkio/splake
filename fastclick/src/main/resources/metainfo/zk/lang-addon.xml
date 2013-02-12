@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-addon>
+	<addon-name>splake-fastclick</addon-name>
+	<language-name>xul/html</language-name>
+
+	<version>
+		<zk-version>6.5.0</zk-version>
+	</version>
+
+	<javascript package="splake.fastclick" />
+
+</language-addon>
