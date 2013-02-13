@@ -4,6 +4,6 @@ jdk:
   - oraclejdk7
   - openjdk6
 before_install:
-  - "gem install chromedriver-helper"
+  - "wget -O- http://chromedriver.googlecode.com/files/chromedriver_linux32_26.0.1383.0.zip | funzip > /usr/bin/chromedriver"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
