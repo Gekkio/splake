@@ -208,6 +208,8 @@ public class Highcharts extends Div {
 
             Value<String> name();
 
+            Value<String> type();
+
             Marker marker();
         }
 

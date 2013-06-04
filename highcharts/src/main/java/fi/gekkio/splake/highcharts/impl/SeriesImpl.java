@@ -10,6 +10,7 @@ class SeriesImpl extends OptionBase implements Highcharts.Options.Series {
 
     private Value<Color> color;
     private Value<String> name;
+    private Value<String> type;
 
     private Marker marker;
 
@@ -46,6 +47,13 @@ class SeriesImpl extends OptionBase implements Highcharts.Options.Series {
     }
 
     @Override
+    public Value<String> type() {
+        if (type == null)
+            type = new Value<String>();
+        return type;
+    }
+
+    @Override
     public Marker marker() {
         if (marker == null)
             marker = new MarkerImpl();
@@ -56,6 +64,7 @@ class SeriesImpl extends OptionBase implements Highcharts.Options.Series {
     protected void writeJsonOutput(JSONObject json) {
         writeValue(json, "color", color);
         writeValue(json, "name", name);
+        writeValue(json, "type", type);
 
         if (marker != null)
             json.put("marker", marker);
