@@ -33,7 +33,7 @@
 		<mockito.version>1.9.5</mockito.version>
 		<scala.version>2.10.0</scala.version>
 		<scala.abi.version>2.10</scala.abi.version>
-		<scalacheck.version>1.10.0</scalacheck.version>
+		<scalacheck.version>1.10.1</scalacheck.version>
 		<selenium.version>2.33.0</selenium.version>
 		<slf4j.version>1.7.5</slf4j.version>
 		<specs2.version>1.13</specs2.version>
