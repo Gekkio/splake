@@ -1,3 +1,3 @@
-window.addEventListener('load', function() {
-  new FastClick(document.body);
-}, false);
+jq(function() {
+  FastClick.attach(document.body);
+});
