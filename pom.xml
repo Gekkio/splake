@@ -48,7 +48,7 @@
 		<maven.jar.version>2.4</maven.jar.version>
 		<maven.javadoc.version>2.9</maven.javadoc.version>
 		<maven.jxr.version>2.3</maven.jxr.version>
-		<maven.pmd.version>2.7.1</maven.pmd.version>
+		<maven.pmd.version>3.0.1</maven.pmd.version>
 		<maven.project.info.reports.version>2.6</maven.project.info.reports.version>
 		<maven.resources.version>2.6</maven.resources.version>
 		<maven.site.version>3.2</maven.site.version>
