@@ -51,7 +51,7 @@
 		<maven.pmd.version>3.0.1</maven.pmd.version>
 		<maven.project.info.reports.version>2.7</maven.project.info.reports.version>
 		<maven.resources.version>2.6</maven.resources.version>
-		<maven.site.version>3.2</maven.site.version>
+		<maven.site.version>3.3</maven.site.version>
 		<maven.surefire.version>2.14.1</maven.surefire.version>
 
 		<maven.scala.version>3.1.5</maven.scala.version>
