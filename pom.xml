@@ -24,7 +24,7 @@
 		<drumfish.version>0.1.0</drumfish.version>
 		<guava.version>13.0.1</guava.version>
 		<javax.servlet.version>3.0.1</javax.servlet.version>
-		<jetty.version>8.1.9.v20130131</jetty.version>
+		<jetty.version>8.1.11.v20130520</jetty.version>
 		<jsr305.version>2.0.1</jsr305.version>
 		<junit.version>4.11</junit.version>
 		<logback.version>1.0.9</logback.version>
